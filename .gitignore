@@ -1,15 +1,71 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
+# --------------------------------------
+#  🔹 Angular Ignored Files
+# --------------------------------------
+
 # Compiled output
 /dist
 /tmp
 /out-tsc
 /bazel-out
 
-# Node
+# Node.js
 /node_modules
 npm-debug.log
 yarn-error.log
+
+# Angular Cache
+/.angular/cache
+
+# Logs and testing
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# --------------------------------------
+#  🔹 ASP.NET Core Ignored Files
+# --------------------------------------
+
+# Build output
+/bin
+/obj
+/debug
+/release
+
+# User-specific configuration
+*.user
+*.suo
+*.vspscc
+*.vssscc
+*.ncrunch*
+*.g.cs
+*.Designer.cs
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Logs and Database
+*.log
+logs/
+sql/
+dumps/
+
+# ASP.NET Environment Config
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Local.json
+
+# --------------------------------------
+#  🔹 IDE and System Files
+# --------------------------------------
 
 # IDEs and editors
 .idea/
@@ -20,23 +76,9 @@ yarn-error.log
 .settings/
 *.sublime-workspace
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+# Visual Studio
+.vs/
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
-
-# System files
+# macOS and Windows system files
 .DS_Store
 Thumbs.db
